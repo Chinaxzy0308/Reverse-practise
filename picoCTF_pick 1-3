@@ -1,0 +1,4 @@
+pick 1:
+eval(input+'()')会将input和()计算成一个命令执行，输入win即可调用win()函数打印出hex from flag
+pick 2:
+输入 print(flag = open('flag.txt', 'r').read())，eval解释成：print(flag = open('flag.txt', 'r').read())(),由于python是解释型语言，先运行前半段打印flag，返回none,然后执行none()，报错：'NoneType' object is not callable
