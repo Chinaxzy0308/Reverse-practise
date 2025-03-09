@@ -1,0 +1,2 @@
+Packer:
+你会得到一个名为OUt的elf文件，执行strings out显示所有字符串，发现：upx，进行upx -d out,然后strings out | grep "glag"得到flag的hex码
